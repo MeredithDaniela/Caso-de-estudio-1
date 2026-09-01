@@ -43,7 +43,7 @@
             btnResumen = new Button();
             btnLimpiar = new Button();
             labelResumen = new Label();
-            textBox2 = new TextBox();
+            textBoxResum = new TextBox();
             actividades.SuspendLayout();
             Modalidad.SuspendLayout();
             SuspendLayout();
@@ -193,6 +193,7 @@
             btnLimpiar.TabIndex = 5;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // labelResumen
             // 
@@ -203,20 +204,20 @@
             labelResumen.TabIndex = 6;
             labelResumen.Text = "Resumen:";
             // 
-            // textBox2
+            // textBoxResum
             // 
-            textBox2.Location = new Point(26, 365);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(434, 128);
-            textBox2.TabIndex = 7;
+            textBoxResum.Location = new Point(26, 365);
+            textBoxResum.Multiline = true;
+            textBoxResum.Name = "textBoxResum";
+            textBoxResum.Size = new Size(434, 128);
+            textBoxResum.TabIndex = 7;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(488, 527);
-            Controls.Add(textBox2);
+            Controls.Add(textBoxResum);
             Controls.Add(labelResumen);
             Controls.Add(btnLimpiar);
             Controls.Add(btnResumen);
@@ -251,6 +252,6 @@
         private Button btnResumen;
         private Button btnLimpiar;
         private Label labelResumen;
-        private TextBox textBox2;
+        private TextBox textBoxResum;
     }
 }
